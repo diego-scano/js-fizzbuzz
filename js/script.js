@@ -1,19 +1,13 @@
-// dichiarazione variabili
-var counter = 0;
+for (i = 1; i <= 100; i++) {
 
-// ciclo
-for (i = 0; i < 100; i++) {
-  console.log((counter++) + 1);
-
-  if (counter%3 === 0 && counter%5 !== 0) {
+  if (i%3 === 0 && i%5 !== 0) {
     console.log('Fizz');
-  }
-
-  if (counter%5 === 0 && counter%3 !==0) {
+  } else if (i%5 === 0 && i%3 !==0) {
     console.log('Buzz');
-  }
-
-  if (counter%3 === 0 && counter%5 === 0) {
+  } else if (i%3 === 0 && i%5 === 0) {
     console.log('FizzBuzz');
+  } else {
+    console.log(i);
   }
+  
 }
